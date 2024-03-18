@@ -17,9 +17,9 @@ const Footer = () => {
 
   if (!pathname.startsWith("/dashboard")) {
     return (
-      <div className="mt-24 bg-[#1e1f22] lg:px-20 2xl:px-60 pt-20 print:hidden">
+      <div className="mt-24 bg-[#1e1f22] px-5 lg:px-20 2xl:px-60 pt-20 print:hidden">
         <div className="flex flex-col lg:flex-row border-b border-gray-700 pb-16 ">
-          <div className="flex-auto lg:w-32 px-10 lg:px-0">
+          <div className="flex-auto lg:w-32 px-5 lg:px-0">
             <div className="flex">
               <Image
                 src="/lightit_logo.png"
@@ -39,7 +39,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex-1 px-10 lg:px-2">
+          <div className="flex-1 px-10 lg:px-2 hidden lg:block">
             <h4 className="text-white text-lg font-bold pb-5">Industries</h4>
             <ul className="text-[#fff] space-y-2">
               <li>
@@ -105,7 +105,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 px-10 lg:px-2">
+          <div className="flex-1 px-10 lg:px-2 hidden lg:block">
             <h4 className="text-white text-lg font-bold pb-5">Services</h4>
             <ul className="text-[#fff] space-y-2">
               <li>
@@ -170,7 +170,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 px-10 lg:px-2">
+          <div className="flex-1 px-10 lg:px-2 hidden lg:block">
             <h4 className="text-white text-lg font-bold pb-5">Expertise</h4>
             <ul className="text-[#fff] space-y-2">
               <li>
@@ -235,7 +235,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="flex-1 px-10 lg:px-5">
+          <div className="flex-1 px-10 lg:px-5 hidden lg:block">
             <h4 className="text-white text-lg font-bold pb-5">About Us</h4>
             <ul className="text-[#fff] space-y-2">
               <li>
@@ -273,22 +273,21 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-between py-10">
-          <p className="text-[#fff] text-sm">
+        <div className="flex flex-col-reverse lg:flex-row justify-between py-10">
+          <p className="text-[#fff] text-sm text-center lg:text-right">
             &copy;{new Date().getFullYear()} Light IT Global. All rights
-            reserved |
+            reserved
             <Link
               href=""
-              target="_blank"
               rel="noopener noreferrer"
-              className="underline pl-2"
+              className="underline pl-2 block md:inline"
             >
               Terms of Use and Privacy Policy
             </Link>
           </p>
 
-          <div>
-            <div className="flex space-x-10">
+          <div className="pb-10 lg:pb-0">
+            <div className="flex space-x-10 justify-center">
               <Link href="" rel="noopener noreferrer">
                 <FaFacebookF
                   style={{ width: "20px", height: "20px" }}
