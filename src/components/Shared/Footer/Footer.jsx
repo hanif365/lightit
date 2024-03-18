@@ -288,32 +288,32 @@ const Footer = () => {
 
           <div className="pb-10 lg:pb-0">
             <div className="flex space-x-10 justify-center">
-              <Link href="" rel="noopener noreferrer">
+              <Link href="#" rel="noopener noreferrer">
                 <FaFacebookF
                   style={{ width: "20px", height: "20px" }}
                   className="cursor-pointer text-[#fff] hover:text-gray-400 transition-all ease-in-out duration-500"
                 />
               </Link>
-              <Link href="" rel="noopener noreferrer">
+              <Link href="#" rel="noopener noreferrer">
                 <RiInstagramFill
                   style={{ width: "20px", height: "20px" }}
                   className="cursor-pointer text-[#fff] hover:text-gray-400 transition-all ease-in-out duration-500"
                 />
               </Link>
-              <Link href="" rel="noopener noreferrer">
+              <Link href="#" rel="noopener noreferrer">
                 <FaLinkedinIn
                   style={{ width: "20px", height: "20px" }}
                   className="cursor-pointer text-[#fff] hover:text-gray-400 transition-all ease-in-out duration-500"
                 />
               </Link>
-              <Link href="" rel="noopener noreferrer">
+              <Link href="#" rel="noopener noreferrer">
                 <FaXTwitter
                   style={{ width: "20px", height: "20px" }}
                   className="cursor-pointer text-[#fff] hover:text-gray-400 transition-all ease-in-out duration-500"
                 />
               </Link>
 
-              <Link href="" rel="noopener noreferrer">
+              <Link href="#" rel="noopener noreferrer">
                 <FaBehance
                   style={{ width: "20px", height: "20px" }}
                   className="cursor-pointer text-[#fff] hover:text-gray-400 transition-all ease-in-out duration-500"

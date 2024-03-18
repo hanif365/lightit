@@ -195,7 +195,8 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    href="/contact-us"
+                    href="/"
+                    // href="/contact-us"
                     className="text-2xl lg:hidden py-5 flex justify-center mt-10 lg:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-gray-700 lg:border-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
                     type="button"
                   >
@@ -207,7 +208,8 @@ function Navbar() {
 
             <div className="hidden lg:block">
               <Link
-                href="/contact-us"
+                href="/"
+                // href="/contact-us"
                 className="px-12 py-3 lg:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
                 type="button"
               >
