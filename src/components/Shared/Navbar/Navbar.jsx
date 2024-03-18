@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaEquals, FaXmark } from "react-icons/fa6";
+import { LuAlignJustify } from "react-icons/lu";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import "./Navbar.css";
 
 function Navbar() {
   const pathname = usePathname();
@@ -66,10 +68,10 @@ function Navbar() {
                         }}
                       />
                     ) : (
-                      <FaEquals
+                      <LuAlignJustify
                         style={{
-                          width: "35px",
-                          height: "35px",
+                          width: "38px",
+                          height: "38px",
                           color: "#fff",
                         }}
                       />
@@ -80,7 +82,7 @@ function Navbar() {
             </div>
 
             {/* Middle part of Navbar */}
-            <div>
+            <div className="">
               <div
                 className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-3 ${
                   navbar ? "p-12 lg:p-0 block" : "hidden"
@@ -88,15 +90,16 @@ function Navbar() {
               >
                 <ul className="h-screen lg:h-auto items-center justify-center lg:flex">
                   <Link
-                    href="/industries"
+                    href="/"
+                    // href="/industries"
                     onClick={() => {
                       setNavbar((prev) => !prev);
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/industries"
-                          ? "lg:border-b-2 border-red-500"
+                          ? "lg:border-b-2 lg:border-red-500"
                           : ""
                       }`}
                     >
@@ -105,15 +108,16 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    href="/services"
+                    href="/"
+                    // href="/services"
                     onClick={() => {
                       setNavbar((prev) => !prev);
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/services"
-                          ? "lg:border-b-2 border-red-500"
+                          ? "lg:border-b-2 lg:border-red-500"
                           : ""
                       }`}
                     >
@@ -121,15 +125,16 @@ function Navbar() {
                     </li>
                   </Link>
                   <Link
-                    href="/expertise"
+                    href="/"
+                    // href="/expertise"
                     onClick={() => {
                       setNavbar((prev) => !prev);
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/expertise"
-                          ? " lg:border-b-2 border-red-500"
+                          ? " lg:border-b-2 lg:border-red-500"
                           : ""
                       }`}
                     >
@@ -137,15 +142,16 @@ function Navbar() {
                     </li>
                   </Link>
                   <Link
-                    href="/success-stories"
+                    href="/"
+                    // href="/success-stories"
                     onClick={() => {
                       setNavbar((prev) => !prev);
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700  cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/success-stories"
-                          ? " lg:border-b-2 border-red-500"
+                          ? " lg:border-b-2 lg:border-red-500"
                           : ""
                       }`}
                     >
@@ -154,15 +160,16 @@ function Navbar() {
                   </Link>
 
                   <Link
-                    href="/company"
+                    href="/"
+                    // href="/company"
                     onClick={() => {
                       setNavbar((prev) => !prev);
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/company"
-                          ? " lg:border-b-2 border-red-500"
+                          ? " lg:border-b-2 lg:border-red-500"
                           : ""
                       }`}
                     >
@@ -170,15 +177,16 @@ function Navbar() {
                     </li>
                   </Link>
                   <Link
-                    href="/blog"
+                    href="/"
+                    // href="/blog"
                     onClick={() => {
                       setNavbar((prev) => !prev);
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 lg:ml-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/blog"
-                          ? " lg:border-b-2 border-red-500"
+                          ? " lg:border-b-2 lg:border-red-500"
                           : ""
                       }`}
                     >
@@ -188,7 +196,7 @@ function Navbar() {
 
                   <Link
                     href="/contact-us"
-                    className="text-2xl lg:hidden py-5 flex justify-center mt-10 lg:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
+                    className="text-2xl lg:hidden py-5 flex justify-center mt-10 lg:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-gray-700 lg:border-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
                     type="button"
                   >
                     Contact Us
