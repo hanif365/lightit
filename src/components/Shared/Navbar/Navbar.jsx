@@ -33,8 +33,8 @@ function Navbar() {
         <nav
           className={`w-full fixed top-0 left-0 right-0 z-10 ${
             showNavbar
-              ? "bg-white text-gray-600 shadow-md"
-              : "bg-transparent text-white border-b-[1px] border-gray-700"
+              ? "bg-black lg:bg-white text-white lg:text-gray-600 shadow-md"
+              : "bg-black  lg:bg-transparent text-white border-b-[1px] border-gray-700"
           }`}
         >
           <div className="justify-between px-4 mx-auto lg:max-w-7xl 2xl:max-w-screen-2xl md:items-center md:flex md:px-8">
@@ -70,7 +70,7 @@ function Navbar() {
                         style={{
                           width: "35px",
                           height: "35px",
-                          color: "#000000",
+                          color: "#fff",
                         }}
                       />
                     )}
@@ -94,7 +94,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-base font-bold py-6 md:mr-4 text-center border-b-2 md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 md:mr-4 text-center border-b-2 md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/industries"
                           ? "md:border-b-2 border-red-500"
                           : ""
@@ -111,7 +111,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/services"
                           ? "md:border-b-2 border-red-500"
                           : ""
@@ -127,7 +127,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/expertise"
                           ? " md:border-b-2 border-red-500"
                           : ""
@@ -143,7 +143,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/success-stories"
                           ? " md:border-b-2 border-red-500"
                           : ""
@@ -160,7 +160,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/company"
                           ? " md:border-b-2 border-red-500"
                           : ""
@@ -176,7 +176,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-base font-bold py-6 md:ml-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 md:ml-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/blog"
                           ? " md:border-b-2 border-red-500"
                           : ""
@@ -185,11 +185,19 @@ function Navbar() {
                       Blog
                     </li>
                   </Link>
+
+                  <Link
+                    href="/contact-us"
+                    className="text-2xl lg:hidden py-5 flex justify-center mt-10 lg:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
+                    type="button"
+                  >
+                    Contact Us
+                  </Link>
                 </ul>
               </div>
             </div>
 
-            <div>
+            <div className="hidden lg:block">
               <Link
                 href="/contact-us"
                 className="px-12 py-3 md:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
