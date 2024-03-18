@@ -97,7 +97,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-8 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/industries"
                           ? "lg:border-b-2 lg:border-red-500"
                           : ""
@@ -115,7 +115,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-8 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/services"
                           ? "lg:border-b-2 lg:border-red-500"
                           : ""
@@ -132,7 +132,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-8 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/expertise"
                           ? " lg:border-b-2 lg:border-red-500"
                           : ""
@@ -149,7 +149,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700  cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-8 text-center border-b-2 lg:border-b-0 border-gray-700  cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/success-stories"
                           ? " lg:border-b-2 lg:border-red-500"
                           : ""
@@ -167,7 +167,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-8 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/company"
                           ? " lg:border-b-2 lg:border-red-500"
                           : ""
@@ -184,7 +184,7 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`underline_design text-2xl lg:text-base font-bold py-6 lg:mr-0 text-center border-b-2 lg:border-b-0 border-gray-700 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/blog"
                           ? " lg:border-b-2 lg:border-red-500"
                           : ""
