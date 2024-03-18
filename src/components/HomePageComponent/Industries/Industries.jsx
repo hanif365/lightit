@@ -48,11 +48,11 @@ const Industries = () => {
     },
   ];
   return (
-    <div className="px-14 2xl:px-72 pt-20 pb-16  bg-[#f1f4fd]">
-      <h1 className="lg:text-5xl 2xl:text-6xl font-bold text-center">
+    <div className="px-5 lg:px-14 2xl:px-72 pt-20 pb-16  bg-[#f1f4fd]">
+      <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold text-center">
         Our Industries
       </h1>
-      <div className="grid grid-cols-3 gap-x-5 gap-y-6 pt-20">
+      <div className="grid lg:grid-cols-3 gap-x-5 gap-y-6 pt-10 lg:pt-20">
         {industries?.map((industry) => (
           <div
             className="bg-white rounded-2xl group overflow-hidden cursor-pointer"
@@ -66,7 +66,7 @@ const Industries = () => {
               height={1000}
             />
             <div className="p-4">
-              <h2 className="lg:text-3xl font-bold">{industry.name}</h2>
+              <h2 className="text-xl lg:text-3xl font-bold">{industry.name}</h2>
               <p className="lg:text-lg tracking-wide py-5">
                 {industry.description}
               </p>

@@ -11,11 +11,11 @@ export default function Home() {
     <main className="">
       <HeroSection />
       <Services />
-      {/* <Awards />
+      <Awards />
       <Industries />
-      <SuccessStories />
-      <Testimonial />
-      <Contact /> */}
+      {/* <SuccessStories /> */}
+      {/* <Testimonial /> */}
+      {/* <Contact /> */}
     </main>
   );
 }

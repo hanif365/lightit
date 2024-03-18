@@ -16,10 +16,10 @@ const HeroSection = () => {
           className="w-full h-[90vh]  lg:h-[140vh] 2xl:h-[90vh]"
         />
         <div className="absolute px-5 2xl:px-36 lg:w-1/2 2xl:w-3/4 space-y-3 top-0 left-0 lg:left-16 right-0 bottom-0 lg:bottom-40 2xl:bottom-0 flex flex-col justify-center z-[1] text-white">
-          <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold">
+          <h1 className="text-4xl lg:text-5xl 2xl:text-6xl font-bold">
             Custom Software
           </h1>
-          <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold">
+          <h1 className="text-4xl lg:text-5xl 2xl:text-6xl font-bold">
             Development Company
           </h1>
           <p className="text-lg lg:text-2xl 2xl:text-3xl font-bold py-5 tracking-wide 2xl:w-3/4">

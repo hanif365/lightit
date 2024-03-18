@@ -45,11 +45,11 @@ const Awards = () => {
     },
   ];
   return (
-    <div className="px-14 2xl:px-72 pt-20 pb-32">
-      <h1 className="lg:text-5xl 2xl:text-6xl font-bold text-center">
+    <div className="px-5 lg:px-14 2xl:px-72 pt-20 pb-32">
+      <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold text-center">
         Awards and Recognitions
       </h1>
-      <div className="grid grid-cols-5 gap-x-12 gap-y-14 pt-20">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-5 lg:gap-x-12 gap-y-14 pt-16 lg:pt-20">
         {awards?.map((award) => (
           <Image
             key={award.id}
