@@ -71,7 +71,7 @@ const Contact = () => {
           <div className="grid grid-cols-4 gap-x-3 gap-y-5 items-center border-b-[1px] pb-5">
             {contactData1?.map((contact1) => (
               <Image
-                className=""
+                className="grayscale hover:grayscale-0"
                 src={contact1.img}
                 alt="contact page logo"
                 width={100}
@@ -83,7 +83,7 @@ const Contact = () => {
           <div className="grid grid-cols-3 gap-x-20 gap-y-5 items-center pt-5 px-4">
             {contactData2?.map((contact2) => (
               <Image
-                className=""
+                className="grayscale hover:grayscale-0"
                 src={contact2.img}
                 alt="contact page logo"
                 width={100}

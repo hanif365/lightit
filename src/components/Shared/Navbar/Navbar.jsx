@@ -18,9 +18,6 @@ function Navbar() {
       setShowNavbar(false);
     }
   };
-  console.log("showNavbar", showNavbar);
-
-  console.log("pathname: ", pathname);
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackgroundNavbar);

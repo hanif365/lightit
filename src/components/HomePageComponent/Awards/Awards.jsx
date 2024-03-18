@@ -57,6 +57,7 @@ const Awards = () => {
             alt="award"
             width={800}
             height={800}
+            className="grayscale hover:grayscale-0"
           />
         ))}
       </div>

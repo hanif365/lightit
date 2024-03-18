@@ -2,7 +2,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import serviceData from "../../../data/servicesData.json";
 
 const Services = () => {
-  console.log("Services: ", serviceData);
   return (
     <div className="px-14 2xl:px-72 pt-20 pb-24 bg-[#f1f4fd]">
       <h1 className="lg:text-5xl 2xl:text-6xl font-bold text-center">
