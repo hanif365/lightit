@@ -56,17 +56,19 @@ const SuccessStories = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="px-14 2xl:px-72 pt-20 pb-16">
-      <h1 className="lg:text-5xl 2xl:text-6xl font-bold text-center">
+    <div className="px-5 lg:px-14 2xl:px-72 pt-20 pb-16">
+      <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold text-center">
         Success Stories
       </h1>
       <div className="pt-16">
         <Slider {...settings}>
           {successStories?.map((successStory) => (
             <div className="" key={successStory.id}>
-              <div className="flex ">
-                <div className="w-7/12 pr-10">
-                  <h2 className="lg:text-3xl font-bold">{successStory.name}</h2>
+              <div className="flex flex-col-reverse lg:flex-row">
+                <div className="w-full lg:w-7/12 lg:pr-10">
+                  <h2 className="text-xl pt-10 lg:pt-0 lg:text-3xl font-bold">
+                    {successStory.name}
+                  </h2>
                   <p className="text-[#2954DA] text-sm bg-[#F1F4FD] p-2 my-5 w-40 rounded-2xl text-center">
                     {successStory.dept}
                   </p>
@@ -84,7 +86,7 @@ const SuccessStories = () => {
                     ))}
                   </div>
 
-                  <div className="flex items-center text-red-500 hover:text-red-600 group pt-8 cursor-pointer">
+                  <div className="flex items-center text-red-500 hover:text-red-600 group pt-8 pb-5 lg:pb-0 cursor-pointer">
                     <p className="mr-5 font-medium">Learn more</p>
                     <FaArrowRightLong
                       className="group-hover:ml-3 duration-300"
@@ -93,7 +95,7 @@ const SuccessStories = () => {
                   </div>
                 </div>
 
-                <div className="w-5/12">
+                <div className="w-full lg:w-5/12">
                   <div className="flex space-x-3 overflow-x-hidden">
                     <Image
                       className="w-full h-full"
