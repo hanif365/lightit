@@ -43,13 +43,13 @@ const Testimonial = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="px-14 2xl:px-72 pt-20 pb-20 bg-[#f1f4fd]">
+    <div className="px-5 lg:px-14 2xl:px-72 pt-20 pb-20 bg-[#f1f4fd]">
       <Slider {...settings}>
         {testimonials?.map((testimonial) => (
           <div className="" key={testimonial.id}>
-            <div className="flex">
-              <div className="w-1/4">
-                <div className="pt-16">
+            <div className="flex flex-col lg:flex-row">
+              <div className="w-full lg:w-1/4">
+                <div className="lg:pt-16">
                   <Image
                     className="w-full h-full"
                     src={testimonial.img}
@@ -58,13 +58,13 @@ const Testimonial = () => {
                     height={100}
                   />
 
-                  <div className="text-right pt-20">
+                  <div className="text-right pt-10 lg:pt-20">
                     <p className="text-sm">Verified by</p>
                     <p className="font-bold text-sm">Clutch</p>
                   </div>
                 </div>
               </div>
-              <div className="w-3/4 pl-40">
+              <div className="w-full lg:w-3/4 lg:pl-40">
                 <FaQuoteLeft size={40} className="text-red-500 mb-5" />
                 <p className="lg:text-xl font-semibold tracking-wider pl-10">
                   {testimonial.speech}
@@ -73,7 +73,7 @@ const Testimonial = () => {
                 <p className="font-bold pt-10 pl-10 italic">
                   {testimonial.name}
                 </p>
-                <p className="text-sm pl-10 pb-10 italic">
+                <p className="text-sm pl-10 pb-2 lg:pb-10 italic">
                   {testimonial.designation}
                 </p>
               </div>
