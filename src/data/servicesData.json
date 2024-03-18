@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Web Development",
+    "description": "Our certified development experts use only trusted technologies for delivering back-end, front-end, cloud, AI, and other software solutions."
+  },
+  {
+    "id": 2,
+    "name": "Mobile Development",
+    "description": "Whichever type of mobile software you need, we can deliver it. Our developers are ready to build native, hybrid, and cross-platform applications."
+  },
+  {
+    "id": 3,
+    "name": "IT Consulting",
+    "description": "Being a team with vast experience in development allows us to provide consulting services and give our clients time- and money-saving recommendations."
+  },
+  {
+    "id": 4,
+    "name": "Business Analysis",
+    "description": "Business analysis and planning are key to smooth, trouble-free development and project's success. And we're ready to help you!"
+  },
+  {
+    "id": 5,
+    "name": "Quality Assurance",
+    "description": "Top quality is impossible without quality control. Our QA specialists provide automated and manual testing to make sure the software is flawless."
+  },
+  {
+    "id": 6,
+    "name": "Design Solutions",
+    "description": "Software products must be unique, eye-pleasing, and user-friendly. Our UI/UX designers create brand identity concepts, prototypes, great interfaces, and more."
+  }
+]
