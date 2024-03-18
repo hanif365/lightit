@@ -37,9 +37,9 @@ function Navbar() {
               : "bg-black  lg:bg-transparent text-white border-b-[1px] border-gray-700"
           }`}
         >
-          <div className="justify-between px-4 mx-auto lg:max-w-7xl 2xl:max-w-screen-2xl md:items-center md:flex md:px-8">
+          <div className="justify-between px-4 mx-auto lg:max-w-7xl 2xl:max-w-screen-2xl lg:items-center lg:flex lg:px-8">
             <div>
-              <div className="flex items-center justify-between pt-3 md:pt-0 md:mt-3 md:block">
+              <div className="flex items-center justify-between pt-3 lg:pt-0 lg:mt-3 lg:block">
                 <Link href="/" onClick={() => {}}>
                   <div className="flex items-center">
                     <Image
@@ -52,7 +52,7 @@ function Navbar() {
                   </div>
                 </Link>
 
-                <div className="md:hidden">
+                <div className="lg:hidden">
                   <button
                     className="text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                     onClick={() => setNavbar((prev) => !prev)}
@@ -82,11 +82,11 @@ function Navbar() {
             {/* Middle part of Navbar */}
             <div>
               <div
-                className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-3 ${
-                  navbar ? "p-12 md:p-0 block" : "hidden"
+                className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-3 ${
+                  navbar ? "p-12 lg:p-0 block" : "hidden"
                 }`}
               >
-                <ul className="h-screen md:h-auto items-center justify-center md:flex">
+                <ul className="h-screen lg:h-auto items-center justify-center lg:flex">
                   <Link
                     href="/industries"
                     onClick={() => {
@@ -94,9 +94,9 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 md:mr-4 text-center border-b-2 md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 lg:mr-4 text-center border-b-2 lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/industries"
-                          ? "md:border-b-2 border-red-500"
+                          ? "lg:border-b-2 border-red-500"
                           : ""
                       }`}
                     >
@@ -111,9 +111,9 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/services"
-                          ? "md:border-b-2 border-red-500"
+                          ? "lg:border-b-2 border-red-500"
                           : ""
                       }`}
                     >
@@ -127,9 +127,9 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/expertise"
-                          ? " md:border-b-2 border-red-500"
+                          ? " lg:border-b-2 border-red-500"
                           : ""
                       }`}
                     >
@@ -143,9 +143,9 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/success-stories"
-                          ? " md:border-b-2 border-red-500"
+                          ? " lg:border-b-2 border-red-500"
                           : ""
                       }`}
                     >
@@ -160,9 +160,9 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 md:mx-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 lg:mx-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/company"
-                          ? " md:border-b-2 border-red-500"
+                          ? " lg:border-b-2 border-red-500"
                           : ""
                       }`}
                     >
@@ -176,9 +176,9 @@ function Navbar() {
                     }}
                   >
                     <li
-                      className={`text-2xl lg:text-base font-bold py-6 md:ml-4 text-center border-b-2  md:border-b-0 hover:md:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
+                      className={`text-2xl lg:text-base font-bold py-6 lg:ml-4 text-center border-b-2  lg:border-b-0 hover:lg:border-b-2 border-red-500 cursor-pointer transition duration-500 ease-in-out ${
                         pathname === "/blog"
-                          ? " md:border-b-2 border-red-500"
+                          ? " lg:border-b-2 border-red-500"
                           : ""
                       }`}
                     >
@@ -200,7 +200,7 @@ function Navbar() {
             <div className="hidden lg:block">
               <Link
                 href="/contact-us"
-                className="px-12 py-3 md:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
+                className="px-12 py-3 lg:mt-3 font-bold tracking-wider overflow-hidden  bg-red-400 hover:bg-red-500 rounded text-white cursor-pointer delay-100 duration-500 ease-in-out"
                 type="button"
               >
                 Contact Us
