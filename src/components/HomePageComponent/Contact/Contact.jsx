@@ -55,23 +55,23 @@ const Contact = () => {
   ];
 
   return (
-    <div className="px-14 2xl:px-72 pt-20 pb-16">
-      <h1 className="lg:text-5xl 2xl:text-6xl font-bold text-center">
+    <div className="px-5 lg:px-14 2xl:px-72 pt-20 pb-16">
+      <h1 className="text-3xl lg:text-5xl 2xl:text-6xl font-bold text-center">
         Have a Project in Mind?
       </h1>
-      <p className="lg:text-xl font-medium text-center pt-5 pb-16">
+      <p className="text-lg lg:text-xl font-medium text-center pt-5 pb-10 lg:pb-16">
         Book a free consultation with tech experts
       </p>
 
-      <div className="flex">
-        <div className="w-7/12 ">
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full lg:w-7/12 ">
           <ContactForm />
         </div>
-        <div className="w-5/12 ">
+        <div className="w-full lg:w-5/12 pt-10 lg:pt-0">
           <div className="grid grid-cols-4 gap-x-3 gap-y-5 items-center border-b-[1px] pb-5">
             {contactData1?.map((contact1) => (
               <Image
-                className="grayscale hover:grayscale-0"
+                className="lg:grayscale lg:hover:grayscale-0"
                 src={contact1.img}
                 alt="contact page logo"
                 width={100}

@@ -104,9 +104,9 @@ const ContactForm = () => {
   const hasErrors = Object.values(errors).some((error) => error !== "");
 
   return (
-    <div className="pr-28">
+    <div className="lg:pr-28">
       <form onSubmit={handleSubmit}>
-        <div className="grid grid-cols-2 gap-x-5">
+        <div className="grid lg:grid-cols-2 gap-x-5">
           <div className="space-y-5">
             <div>
               <input
@@ -206,7 +206,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={hasErrors}
-            className={`px-20 py-3 md:mt-3 font-bold tracking-wider overflow-hidden text-white bg-red-400 rounded cursor-pointer ${
+            className={`w-full lg:w-auto px-20 py-3 md:mt-3 font-bold tracking-wider overflow-hidden text-white bg-red-400 rounded cursor-pointer ${
               hasErrors ? "opacity-50 cursor-not-allowed" : "hover:bg-red-500 "
             } delay-100 duration-500 ease-in-out`}
           >
